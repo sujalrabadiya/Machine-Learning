@@ -80,6 +80,7 @@
             });
 
             let result = await response.json();
+            console.log(result);
             
             document.getElementById("result").innerText = "Prediction: " + result.prediction;
         });
