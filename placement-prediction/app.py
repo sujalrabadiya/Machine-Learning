@@ -5,7 +5,7 @@ import numpy as np
 import threading
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "https://sujalrabadiya.github.io"}})
 
 # Load trained model and scaler
 model = joblib.load('naive_bayes_model.pkl')
