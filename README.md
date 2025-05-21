@@ -38,8 +38,6 @@ python placement-prediction/app.py
 ```
 ### 4️⃣ Access the Frontend
 - If running locally, open `placement-prediction.html` in a browser.
-- If hosted on GitHub Pages, visit:  
-  **[Live Frontend](https://sujalrabadiya.github.io/Machine-Learning/placement-prediction.html)**
 
 ## 📊 Machine Learning Model Training
 This project evaluates **7 different machine learning models** and selects the best-performing one based on accuracy. The models include:
@@ -69,11 +67,7 @@ This project evaluates **7 different machine learning models** and selects the b
    joblib.dump(models['Naive Bayes'], 'naive_bayes_model.pkl')
    joblib.dump(scaler, 'scaler.pkl')
    ```
-
-## 🔗 API Endpoint (Hosted on Render)
-```sh
-POST https://machine-learning-h0jo.onrender.com/predict
-```
+   
 **Example Request:**
 ```json
 {
@@ -86,14 +80,4 @@ POST https://machine-learning-h0jo.onrender.com/predict
     "prediction": "Placed"
 }
 ```
-
-## 🌍 Deployment Details
-- **Flask API:** Hosted on **([Render](https://render.com/))** 
-- **Frontend:** Hosted on **GitHub Pages**
-- **GitHub Actions:** Automates deployment of `placement-prediction.html`
-
-## 🏆 Contributors
-- **Sujal Rabadiya**
-
-🚀 *Feel free to fork & contribute!*
 
